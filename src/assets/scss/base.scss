@@ -1,0 +1,39 @@
+$blue:#345FF6;
+$Gunmetal:#253347;
+$Dark-Electric-Blue:#5E6E85;
+$Borders:#D8E2E7;
+$Pure-White:#FFFFFF;
+
+
+
+@mixin tab {
+    @media (max-width:1024px) and (min-width:769px) {
+        @content;
+    }
+}
+
+@mixin pad {
+    @media (max-width:768px) and (min-width:426px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width:425px) and (min-width:320px) {
+        @content;
+    }
+}
+
+@mixin mg_pd($mg, $pd) {
+    margin: $mg;
+    padding: $pd;
+}
+
+@mixin d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin shadow{
+    box-shadow: 0px 0px 10px 0px rgba($pink, 0.4);
+}
