@@ -1,9 +1,9 @@
-<script setup>
-
-</script>
-
 <template>
   <main>
-    <p>我是首頁</p>
+    <hero></hero>
   </main>
 </template>
+
+<script setup>
+import hero from '@/component/hero/hero.vue';
+</script>
