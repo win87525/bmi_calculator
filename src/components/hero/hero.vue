@@ -30,5 +30,5 @@
 
 
 <style scoped lang="scss">
-@import '../../assets/scss/hero.scss';
+@import '/src/assets/scss/hero.scss';
 </style>

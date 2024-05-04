@@ -28,7 +28,6 @@ section > div .titleBox {
   gap: 3.5rem;
 }
 section > div .bmiBox {
-  background: #FFFFFF;
   padding: 3.2rem;
   border-radius: 1.6rem;
   box-shadow: 1.6rem 3.2rem 5.6rem 0 rgba(143, 174, 207, 0.25);
