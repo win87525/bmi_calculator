@@ -3,8 +3,10 @@ $Gunmetal: #253347;
 $Dark-Electric-Blue: #5E6E85;
 $Borders: #D8E2E7;
 $Pure-White: #FFFFFF;
-$base-gap: 13rem;
-$base-width: 1440px;
+$shadow:#8FAECF;
+$gap: clamp(1rem, 2vw, 3.2rem);
+
+
 @mixin tab {
     @media (max-width:1024px) and (min-width:769px) {
         @content;

@@ -1,0 +1,78 @@
+section {
+  padding: 0 10%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: clamp(1rem, 2vw, 3.2rem);
+  position: relative;
+}
+section > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3.5rem;
+  grid-column: 1/span 6;
+}
+section > div:nth-child(2) {
+  position: absolute;
+  grid-column: 1/13;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: clamp(1rem, 2vw, 3.2rem);
+}
+section > div:nth-child(2) > div {
+  padding: 3.2rem;
+  border-radius: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  box-shadow: 1.6rem 3.2rem 5.6rem 0 rgba(143, 174, 207, 0.25);
+}
+section > div:nth-child(2) > div > div {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+section > div:nth-child(2) > .gender {
+  grid-column: 8/12;
+  grid-row: 1;
+}
+@media (max-width: 1024px) and (min-width: 769px) {
+  section > div:nth-child(2) > .gender {
+    grid-column: 7/12;
+  }
+}
+section > div:nth-child(2) > .age {
+  grid-column: 5/9;
+  grid-row: 2;
+}
+@media (max-width: 1024px) and (min-width: 769px) {
+  section > div:nth-child(2) > .age {
+    grid-column: 3/8;
+  }
+}
+section > div:nth-child(2) > .muscle {
+  grid-column: 9/13;
+  grid-row: 2;
+}
+@media (max-width: 1024px) and (min-width: 769px) {
+  section > div:nth-child(2) > .muscle {
+    grid-column: 8/13;
+  }
+}
+section > div:nth-child(2) > .pregnancy {
+  grid-column: 3/7;
+  grid-row: 3;
+}
+@media (max-width: 1024px) and (min-width: 769px) {
+  section > div:nth-child(2) > .pregnancy {
+    grid-column: 1/6;
+  }
+}
+section > div:nth-child(2) > .race {
+  grid-column: 7/11;
+  grid-row: 3;
+}
+@media (max-width: 1024px) and (min-width: 769px) {
+  section > div:nth-child(2) > .race {
+    grid-column: 6/11;
+  }
+}/*# sourceMappingURL=limitations.css.map */

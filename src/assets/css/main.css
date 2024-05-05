@@ -17,10 +17,6 @@ html {
   font-size: 62.5%;
 }
 
-body {
-  padding: 0 10%;
-}
-
 h1 {
   font-size: 6.4rem;
   line-height: 1.1;
@@ -31,7 +27,8 @@ h2 {
   line-height: 1.1;
 }
 
-h3 {
+h3,
+.heading-m {
   font-size: 2.4rem;
   line-height: 1.1;
 }
@@ -46,6 +43,14 @@ a,
 span {
   font-size: 1.6rem;
   line-height: 1.5;
+  color: #5E6E85;
+}
+
+label {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .bold {
@@ -62,4 +67,59 @@ a {
 
 ul {
   list-style: none;
+}
+
+input[type=checkbox] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 1px solid #D8E2E7;
+  background: #FFFFFF;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+}
+input[type=checkbox]:checked {
+  background: #D8E2E7;
+  border: none;
+}
+input[type=checkbox]:checked::after {
+  content: "";
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: #345FF6;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+input[type=checkbox]:hover:not(:checked) {
+  border: 1px solid #345FF6;
+}
+
+input[type=number] {
+  padding: 2rem 2.4rem;
+  border-radius: 1.2rem;
+  font-size: 2.4rem;
+  line-height: 1.1;
+  font-weight: 600;
+  border: 1px solid #D8E2E7;
+}
+input[type=number]::-moz-placeholder {
+  color: #5E6E85;
+}
+input[type=number]::placeholder {
+  color: #5E6E85;
+}
+input[type=number]:active, input[type=number]:focus {
+  color: #253347;
+  outline: 1px solid #345FF6;
+}
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }/*# sourceMappingURL=main.css.map */

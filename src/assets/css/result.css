@@ -1,16 +1,17 @@
 section {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10%;
+  grid-template-columns: repeat(12, 1fr);
   align-items: end;
+  padding: 0 10%;
+  gap: clamp(1rem, 2vw, 3.2rem);
 }
-section figure > img {
+section img {
+  grid-column: 1/7;
   width: 100%;
 }
 section div {
+  grid-column: 8/13;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 3.5rem;
-  padding-bottom: 3rem;
 }/*# sourceMappingURL=result.css.map */

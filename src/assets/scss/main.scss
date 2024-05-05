@@ -1,76 +1,135 @@
-@import './base.scss';
+@import "./base.scss";
 
 @font-face {
-    font-family: "myFont";
-    src: url("../../fonts/Inter-VariableFont_slnt\,wght.ttf");
+  font-family: "myFont";
+  src: url("../../fonts/Inter-VariableFont_slnt\,wght.ttf");
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    letter-spacing: .1rem;
-    font-family: "myFont";
-    font-optical-sizing: auto;
-    font-style: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 0.1rem;
+  font-family: "myFont";
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 html {
-    scroll-behavior: smooth;
-    font-size: 62.5%;
+  scroll-behavior: smooth;
+  font-size: 62.5%;
 
-    // @include tab {
-    //     font-size: 56.25%;
-    // }
+  // @include tab {
+  //     font-size: 56.25%;
+  // }
 
-    // @include pad {
-    //     font-size: 50%;
-    // }
+  // @include pad {
+  //     font-size: 50%;
+  // }
 }
-body{
-    padding: 0 10%;
-}
+// body{
+//     // padding: 0 10%;
+// }
 
 h1 {
-    font-size: 6.4rem;
-    line-height: 1.1;
+  font-size: 6.4rem;
+  line-height: 1.1;
 }
 
 h2 {
-    font-size: 4.8rem;
-    line-height: 1.1;
+  font-size: 4.8rem;
+  line-height: 1.1;
 }
 
-h3 {
-    font-size: 2.4rem;
-    line-height: 1.1;
+h3,
+.heading-m {
+  font-size: 2.4rem;
+  line-height: 1.1;
 }
 
 h4 {
-    font-size: 2rem;
-    line-height: 1.1;
+  font-size: 2rem;
+  line-height: 1.1;
 }
-
 
 p,
 a,
 span {
-    font-size: 1.6rem;
-    line-height: 1.5;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: $Dark-Electric-Blue;
+}
+label {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .bold {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .body-s {
-    font-size: 1.4rem;
+  font-size: 1.4rem;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
+}
+input[type="checkbox"] {
+  appearance: none;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 1px solid $Borders;
+  background: $Pure-White;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;
+  &:checked {
+    background: $Borders;
+    border: none;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 50%;
+      background: $blue;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &:hover:not(:checked) {
+    border: 1px solid $blue;
+  }
+}
+input[type="number"] {
+  padding: 2rem 2.4rem;
+  border-radius: 1.2rem;
+  font-size: 2.4rem;
+  line-height: 1.1;
+  font-weight: 600;
+  border: 1px solid $Borders;
+  &::placeholder {
+    color: $Dark-Electric-Blue;
+  }
+  &:active,
+  &:focus {
+    color: $Gunmetal;
+    outline: 1px solid $blue;
+  }
+  //   拿掉 input number的上下箭頭
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
 }

@@ -1,1 +1,24 @@
-/*# sourceMappingURL=tips.css.map */
+section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 3.2rem;
+       column-gap: 3.2rem;
+  width: calc(100% - 4.8rem);
+  height: 40rem;
+  align-items: center;
+  margin: 0 auto;
+  background: linear-gradient(-135deg, rgb(214, 230, 254), rgba(214, 252, 254, 0));
+  padding: 0 calc(10% - 4.8rem / 2);
+  border-radius: 3.5rem;
+}
+section > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4.5rem;
+}
+section > div > div {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}/*# sourceMappingURL=tips.css.map */
